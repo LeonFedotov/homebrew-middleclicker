@@ -1,6 +1,6 @@
 cask "middleclicker" do
-  version "1.2.0"
-  sha256 "6818fd1852f4eec846ee1f92e08e70ec7f8fd01621dab0d2fde07a55d0a21954"
+  version "1.3.0"
+  sha256 "04210b4b995b635996a1139ee63af9f9f9b3a8d3d152e02de955a8c0b70558cb"
 
   url "https://github.com/LeonFedotov/MiddleClicker/releases/download/v#{version}/MiddleClicker_Installer.dmg"
   name "MiddleClicker"
@@ -9,13 +9,13 @@ cask "middleclicker" do
 
   app "MiddleClicker.app"
 
-  uninstall quit: "com.opensource.MiddleClicker"
+  uninstall quit: "com.leonfedotov.MiddleClicker"
 
   zap trash:  [
-        "~/Library/Preferences/com.opensource.MiddleClicker.plist",
+        "~/Library/Preferences/com.leonfedotov.MiddleClicker.plist",
       ],
       script: {
         executable: "/usr/bin/tccutil",
-        args:       ["reset", "Accessibility", "com.opensource.MiddleClicker"],
+        args:       ["reset", "Accessibility", "com.leonfedotov.MiddleClicker"],
       }
 end

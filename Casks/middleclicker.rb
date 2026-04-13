@@ -1,6 +1,6 @@
 cask "middleclicker" do
-  version "1.0.0"
-  sha256 "eb822bcbcf8df06636698bdf35a2e6ba1e000c61b44e75e2dc2836230df8102c"
+  version "1.1.0"
+  sha256 "bfc0d25705aefd48a1437acc4bbcda9df486daf8b2f14f015a4d98e1332be282"
 
   url "https://github.com/LeonFedotov/MiddleClicker/releases/download/v#{version}/MiddleClicker_Installer.dmg"
   name "MiddleClicker"

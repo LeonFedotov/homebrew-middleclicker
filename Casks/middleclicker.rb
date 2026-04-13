@@ -9,13 +9,13 @@ cask "middleclicker" do
 
   app "MiddleClicker.app"
 
-  uninstall quit:   "com.opensource.MiddleClicker",
-            script: {
-              executable: "/usr/bin/tccutil",
-              args:       ["reset", "Accessibility", "com.opensource.MiddleClicker"],
-            }
+  uninstall quit: "com.opensource.MiddleClicker"
 
-  zap trash: [
-    "~/Library/Preferences/com.opensource.MiddleClicker.plist",
-  ]
+  zap trash:  [
+        "~/Library/Preferences/com.opensource.MiddleClicker.plist",
+      ],
+      script: {
+        executable: "/usr/bin/tccutil",
+        args:       ["reset", "Accessibility", "com.opensource.MiddleClicker"],
+      }
 end
